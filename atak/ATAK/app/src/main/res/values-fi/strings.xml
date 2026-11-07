@@ -2290,7 +2290,7 @@
   <string name="select_image_editor">Valitse kuvankäsittelyohjelma</string>
   <string name="no_image_editors">Kuvankäsittelyohjelmia ei ole asennettu</string>
   <!--Elevation Tools-->
-  <string name="heatmap">Lämpökartta</string>
+  <string name="heatmap">Lämpö\u200Bkartta</string>
   <string name="viewshed">Näkyvyys\u200Balue</string>
   <string name="terrainslope">Maaston kaltevuus</string>
   <string name="hide_viewshed">Poista näkyvyysalue</string>

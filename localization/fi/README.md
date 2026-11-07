@@ -47,7 +47,7 @@ The check compares `values-fi` with the English source and reports:
 - Overlays = *Karttatasot*.
 - Hostile = *vihollinen*.
 - Mils are labelled *Piirut (6400)*. ATAK uses the NATO 6400 circle, and PV is moving to the same standard.
-- Size classes follow the PV bar rule for guns, howitzers, rocket launchers, tanks and tank recovery vehicles: Light / Medium / Heavy = *kevyt / raskas / järeä*.
+- Size classes follow the PV bar rule (SML, item 22) for tanks and weapons: Light / Medium / Heavy = *kevyt / raskas / järeä*. Mortars, machine guns, grenade launchers and AD missiles keep the NATO scale *kevyt / keskiraskas / raskas* (see the glossary).
 - Where two PV sources disagree, the newer one is used. Open questions are marked *open* in the glossary.
 
 ## Known limitations (upstream code)

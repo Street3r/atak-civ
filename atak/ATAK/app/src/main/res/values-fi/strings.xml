@@ -4348,9 +4348,9 @@
   <string name="s_gpewdh_______">Järeä</string>
   <string name="s_gpewdl_______">Kevyt</string>
   <string name="s_gpewdm_______">Raskas</string>
-  <string name="s_gpewzh_______">Järeä</string>
+  <string name="s_gpewzh_______">Raskas</string>
   <string name="s_gpewzl_______">Kevyt</string>
-  <string name="s_gpewzm_______">Raskas</string>
+  <string name="s_gpewzm_______">Keskiraskas</string>
   <string name="s_gpewhh_______">Järeä</string>
   <string name="s_gpewhl_______">Kevyt</string>
   <string name="s_gpewhm_______">Raskas</string>
@@ -4541,7 +4541,7 @@
   <string name="s_gpevcmm______">Pikkubussi</string>
   <string name="s_gpevcml______">Pakettiauto</string>
   <string name="s_gpevcoh______">Suuri</string>
-  <string name="s_gpevcol______">Pickup-auto</string>
+  <string name="s_gpevcol______">Avolava-auto (pickup)</string>
   <string name="s_gpevcom______">Pieni</string>
   <string name="s_gpevcth______">Suuri, raskas umpiperävaunu</string>
   <string name="s_gpevctm______">Keskikokoinen umpiperävaunu</string>
@@ -5202,11 +5202,11 @@
   <string name="ms2525c_folder_axis_of_advance">Hyökkäyksen suuntautuminen</string>
   <string name="ms2525c_folder_axis_of_advance_ground">Hyökkäyksen suuntautuminen, maa</string>
   <string name="g_g_olagm_____x">Hyökkäyksen suuntautuminen, maa, päähyökkäys</string>
-  <string name="ms2525c_folder_direction_of_attack">Hyökkäyssuunta</string>
-  <string name="g_g_olkg______x">Hyökkäyssuunta, maa</string>
-  <string name="ms2525c_folder_direction_of_attack_ground">Hyökkäyssuunta, maa</string>
-  <string name="g_g_olkgm_____x">Hyökkäyssuunta, maa, päähyökkäys</string>
-  <string name="g_g_olkgs_____x">Hyökkäyssuunta, maa, tukihyökkäys</string>
+  <string name="ms2525c_folder_direction_of_attack">Tarkka hyökkäysreitti</string>
+  <string name="g_g_olkg______x">Tarkka hyökkäysreitti, maa</string>
+  <string name="ms2525c_folder_direction_of_attack_ground">Tarkka hyökkäysreitti, maa</string>
+  <string name="g_g_olkgm_____x">Tarkka hyökkäysreitti, maa, päähyökkäys</string>
+  <string name="g_g_olkgs_____x">Tarkka hyökkäysreitti, maa, tukihyökkäys</string>
   <string name="g_g_opp_______x">Lähtöpiste</string>
   <string name="ms2525c_folder_special">Erityiset</string>
   <string name="g_g_sa________x">Alue</string>
@@ -5354,7 +5354,7 @@
   <string name="g_m_nl________x">Annosnopeuden tasa-arvokäyrät</string>
   <string name="g_m_nf________x">Laskeumaa aiheuttava</string>
   <string name="g_m_nm________x">Varmuusetäisyyden vyöhykkeet</string>
-  <string name="g_m_nz________x">Ydinräjähdyksen nollapiste</string>
+  <string name="g_m_nz________x">Ydinräjähdyksen räjähdyspiste</string>
   <string name="g_m_nr________x">Radioaktiivinen saastealue</string>
   <string name="g_m_ne________x">Päästötapahtumat</string>
   <string name="ms2525c_folder_decontamination__decon__points">Puhdistuspaikat (DECON)</string>
@@ -5491,7 +5491,7 @@
   <string name="g_o_sb________x">Pohjakaiku / ei-miinankaltainen kohde (non-MILCO)</string>
   <string name="g_o_sm________x">Merieliöstö</string>
   <string name="g_o_ss________x">Meren poikkeama</string>
-  <string name="ms2525c_folder_bottom_return_non_milco">Pohjakaiku / ei-sotilaallinen kohde (non-milco)</string>
+  <string name="ms2525c_folder_bottom_return_non_milco">Pohjakaiku / ei-miinankaltainen kohde (non-MILCO)</string>
   <string name="g_o_sbm_______x">Merirakennelma / ihmisen tekemä kohde</string>
   <string name="g_o_sbn_______x">Merenpohjan kivieste</string>
   <string name="g_o_sbx_______x">Hylky, vaarallinen</string>
@@ -5510,7 +5510,7 @@
   <string name="g_t_d_________x">Tuhoaminen</string>
   <string name="g_t_t_________x">Häiritseminen</string>
   <string name="g_g_gppn______x">Kulunvalvontapiste</string>
-  <string name="g_t_f_________x">Kiinnittäminen</string>
+  <string name="g_t_f_________x">Sitominen</string>
   <string name="g_t_a_________x">Seuraaminen ja tehtävän jatkaminen</string>
   <string name="g_t_i_________x">Katkaiseminen</string>
   <string name="g_t_e_________x">Eristäminen</string>

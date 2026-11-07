@@ -81,7 +81,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | MSL / HAE / AGL | Merenpinnasta (MSL) / ellipsoidikorkeus (HAE) / korkeus maanpinnasta (AGL) | SML I (X), MTK; HAE and AGL: – |
 | Slant range | Vinoetäisyys | – |
 | Waypoint | Reittipiste | TO 10.4 |
-| Checkpoint (route) | Tarkastuspiste | – . SML *tarkastuspaikka* is a manned checkpoint, not a route point. *Open*; the alternative is *reittipiste* (TO 10.4) |
+| Checkpoint (route) | Tarkastuspiste | – . *Open.* PV route planning uses *rasti* (TO 2013 and SelvKK 2024: "Jaa reitti rasteiksi noin kilometrin välein"). PV's *tarkastuspiste* / *tarkastuspaikka* is a manned control point (SML, TAKK 2025). *Reittipiste* is taken by *Waypoint* |
 | Route; infil / exfil (route direction) | Reitti; soluttautuminen / irtautuminen | JJR (*irtautumisreitti*) |
 | Resection | Taaksepäinleikkaus | – (no PV source; MTK covers only forward intersection) |
 | Range rings | Etäisyysrenkaat | – |
@@ -111,7 +111,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Tactical symbol / graphic | Taktinen merkki / taktinen kuvio | SML I |
 | Frame / icon / fill / modifier (amplifier) | Kehys / kuvake / täyteväri / lisämerkintä | SML I kohta 7 |
 | Affiliation (standard identity) | Tunnistetieto | SML I |
-| Friendly / Hostile / Neutral / Unknown | Oma / vihollinen / puolueeton / tuntematon | SML I. *Open:* NS 2025 defines *neutral* in the identification sense, recommends *neutraali* and rejects *puolueeton* |
+| Friendly / Hostile / Neutral / Unknown | Oma / vihollinen / puolueeton / tuntematon | SML I gives both forms, *neutraali, puolueeton* (abbreviation *neu*). *Open:* NS 2025 (5212) defines *neutral* in the identification sense, recommends *neutraali* and rejects *puolueeton* |
 | Assumed friend / suspect / pending | Oletettu oma / epäilty / odottaa tunnistusta | – |
 | Adversary / Enemy | Vastustaja / vihollinen | NS |
 | Exercise / Simulation / Reality (symbol context) | Harjoitus / simulaatio / todellinen | NS (*exercise*) |
@@ -138,7 +138,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Traffic control point | Liikenteen ohjauspiste | SML I |
 | Objective | Tavoite | SML I |
 | Rally point / assembly area | Kokoontumispaikka / kokoontumisalue | SML I |
-| Attack position / assault position | Hyökkäysasema / rynnäkköasema | – . *Open:* JJR 7.7 uses *lähtöasema* for the position before the line of departure |
+| Attack position / assault position | Hyökkäysasema / lähtöasema | JJR 7.2: *hyökkäysasema* is the prepared base where the unit waits (under 3 km from the engagement area); *lähtöasema* is close to the engagement area, covered from observation, where the final refinements are made. JJR's order (hyökkäysasema → lähtöasema → tuhoamisalue → tavoite) matches 2525's attack position → assault position → objective |
 | Engagement area (EA) | Tuhoamisalue (EA) | JJR |
 | Named area of interest (NAI) | Tiedustelun kohdealue (NAI) | – |
 | Ambush | Väijytys | JJR 2018 (symbol table and 8.2). SML 2005 has *ylläkkö*; JJR treats *ylläkkö* as a quick form of väijytys |
@@ -150,7 +150,10 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Firing position / firing point | Tuliasema / ampumapaikka | SML I kohta 31; firing point: *open* |
 | Main / supporting attack | Päähyökkäys / tukihyökkäys | SML I |
 | Axis of advance | Hyökkäyksen suuntautuminen; aviation = ilmahyökkäyksen suuntautuminen | SML I 4 e kohta 42 (open arrow) |
-| Retain (task) | Pitäminen | SML I 4 b kohta 34. *Open:* JJR and SKK use *hallussa pitää* |
+| Direction of attack | Tarkka hyökkäysreitti | SML I 4 e kohta 42: the line arrow, usually for a battalion or smaller unit. This keeps *hyökkäyssuunta* for the FAH |
+| Principal direction of fire (PDF) | Pääampumasuunta (PDF) | TO, JJR, ITKK use *ampumasuunta*; *tulensuunta* is not in the sources |
+| Fix (task) | Sitominen | SKK 2024/2026 *sitoa vihollisen huomio* = Soldiers' Guide 2020 *fix the enemy's attention*; JJR *sitoo vihollisen taisteluun*. The obstacle effect *fix* is *hidastaminen* (SuojKK) |
+| Retain (task) | Pitäminen | TO 2013 and SKK 2026 position sketches: *pidettävä maastonkohta* (Soldiers' Guide: *terrain to be held*); SML map example *PITÄÄ*. SKK's *hallussa pitäminen* is about possessing weapons, not terrain |
 | Relief in place (RIP) | Rintamavastuun vaihto | JJR 3.6.1 |
 | Withdraw under pressure | Irtautuminen vihollisen painostaessa | JJR |
 | Counterattack | Vastahyökkäys | SML I |
@@ -163,12 +166,13 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Air defense | Ilmatorjunta (branch symbol); NS uses *ilmapuolustus* for the broader concept | SML I, NS |
 | Engineer: combat / construction | Pioneeri: taistelupioneeri / rakennuspioneeri | SML I |
 | CBRN | Suojelu (branch); the abbreviation CBRN is kept (CBRN-aineet, Suojelukalusto (CBRN)). CBRN sensor = ilmaisin. *ABC/NBC/KBRN* are not used | SML I, SK |
+| Ground zero | Räjähdyspiste; nuclear = ydinräjähdyksen räjähdyspiste | SuojKK 2022 ("Ydinräjähdyksessä lämpötila kohoaa räjähdyspisteessä") |
 | Supply / Maintenance | Täydennykset / kunnossapito | SML I |
 | Supply point / supply class | Jakopaikka / huoltoluokka (Class I–X = huoltoluokka I–X) | SML I; class: – |
 | Combat service support (CSS) | Huolto (category); huoltojoukot (units); huoltotuki (CSS) under *Sustainment* | – |
 | Army aviation | Maavoimien ilmailu | SML I |
 | Wheeled / tracked / towed / over-snow / amphibious | Pyöräajoneuvo / tela-ajoneuvo / hinattava / lumiajoneuvo / uintikykyinen | SML I B 1 d |
-| Light / Medium / Heavy (guns, howitzers, rocket launchers, tanks, tank recovery vehicles) | Kevyt / raskas / järeä | SML I B 1 f kohta 22 (1/2/3 bars), SML II D 3 b, AO (155 mm = raskas). Not used for AD missiles, machine guns, mortars, vehicles, aircraft or maintenance, which keep kevyt / keskiraskas / raskas |
+| Light / Medium / Heavy (weapons and tanks) | Kevyt / raskas / järeä | SML I B 1 f kohta 22: "Panssarivaunut ja aseet, poislukien it-ohjukset sekä käsiaseet" are classed *kevyt / raskas / järeä* (1/2/3 bars); SML II D 3 b; AO (155 mm = raskas). Used for guns, howitzers, rocket and missile launchers, AT guns, AT missile and rocket launchers, recoilless guns, AD guns, tanks and tank recovery vehicles. Deliberate exceptions, which keep the NATO scale *kevyt / keskiraskas / raskas*: mortars (PV's 120 mm *raskas kranaatinheitin* matches NATO heavy), and machine guns and grenade launchers (infantry weapons; SML 21: "40 mm:n kevyt kranaattikonekivääri"). AD missiles, vehicles, aircraft and maintenance also keep the NATO scale |
 | Recovery (vehicle) / tank recovery vehicle | Hinaus / hinauspanssarivaunu | SML II D 3 b, II D 8 c (*hinaus ja evakuointi*). *Evakuointi* is kept for casualties |
 | Rotary wing | Helikopteri | – . SKK 2026 uses *pyöriväsiipinen* only for drones |
 | Fixed wing | Kiinteäsiipinen | – |
@@ -227,7 +231,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Observer | Tähystäjä | TO 5.4 |
 | Danger close | Danger close (varmuusetäisyyden sisällä) | TO: *varmuusetäisyys*; the NATO term is kept because it is used verbatim in CAS and fires procedures |
 | Close air support (CAS) | Lähi-ilmatuki (CAS) | – |
-| Final attack heading (FAH) | Hyökkäyssuunta (FAH) | ITKK. *Hyökkäyssuunta* is also used for the *Direction of Attack* graphics |
+| Final attack heading (FAH) | Hyökkäyssuunta (FAH) | ITKK. The *Direction of Attack* graphics use *tarkka hyökkäysreitti*, so the two do not collide |
 | Final protective fire (FPF) | Torjuntamaali (FPF) | SKK 2026 (*epäsuoran tulen torjuntamaali*), JJR |
 | Munition | Ampumatarvike | TO |
 | Range finder | Etäisyysmittari | TO |
@@ -256,7 +260,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Medical evacuation (MEDEVAC) | Potilasevakuointi (MEDEVAC) | SuojKK, HJKK |
 | Casualty report (MIST) | AT-MIST-raportti | TEA |
 | Triage / triage card | Potilasluokittelu / luokittelukortti | TEA, KOTS |
-| Casualty collection point | Evakuointi-/hoitopaikka (running text); symbol: haavoittuneiden kokoamispaikka (pattern of SML *sotavankien kokoamispaikka*) | SKK 5.9.10 / 4.7.7, SML |
+| Casualty collection point | Haavoittuneiden kokoamispaikka (symbol; pattern of SML *sotavankien kokoamispaikka*) | – . *Open.* PV has no single term: TO 2013 moves casualties to the *evakuointipaikka* and then to the *hoitopaikka*; SKK 2024 *evakuointi-/hoitopaikka* = Soldiers' Guide *evacuation/casualty collection point*; SKK 2026 *lääkintä-/evakuointipaikka* = *Casualty Collection/Evacuation Point* |
 | Litter / ambulatory (patient) | Paaripotilas / kävelevä | SK 4.8, TKO |
 | MEDEVAC precedence: urgent / urgent surgical / priority / routine | Kiireellinen / kiireellinen kirurginen / etusija / rutiini | – |
 

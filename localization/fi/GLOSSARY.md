@@ -44,8 +44,9 @@ Rows marked *open* are waiting for a decision by the project owner.
   - Exception: where the Java code adds one half of the pair as a straight apostrophe, the string uses `'` too. These strings are `are_you_sure_delete`, `video_text17`, `video_text19`, `video_text20`, `point_dropper_text23`, `iconset_delete` and `mapping_iconset`.
 - **Abbreviation inflection.** Abbreviations take a colon: *GPS:n*, *URL:n*, *KML:ää*. *ATAK* inflects as a word: *ATAKin*, *ATAKiin*.
 - **Menu paths.** Write them with " > ": *Asetukset > Työkaluasetukset*.
-- **Untranslated names.** Product and protocol names are not translated: ATAK, TAK Server, CoT, KML, KMZ, GeoChat, Bloodhound, DTED, MISB, KLV, SPI (Sensor Point of Interest).
-  - The CIV build's *Digital Pointer (DP)* is *digitaalinen osoitin (DP)*.
+- **Untranslated names.** Product and protocol names are not translated: ATAK, TAK Server, CoT, KML, KMZ, GeoChat, DTED, MISB, KLV, SPI (Sensor Point of Interest).
+  - The CIV build's *Digital Pointer (DP)* is *DP-osoitin*; its tool label is *Osoitin (DP)*.
+- **Tool names.** Tools are named by what they do, not translated word for word (owner's decision, 2026-11-07). See *Tool names* under *Software / UI*.
 
 ## Navigation, coordinates and units
 
@@ -83,10 +84,10 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Waypoint | Reittipiste | TO 10.4 |
 | Checkpoint (route) | Tarkastuspiste | – . *Open.* PV route planning uses *rasti* (TO 2013 and SelvKK 2024: "Jaa reitti rasteiksi noin kilometrin välein"). PV's *tarkastuspiste* / *tarkastuspaikka* is a manned control point (SML, TAKK 2025). *Reittipiste* is taken by *Waypoint* |
 | Route; infil / exfil (route direction) | Reitti; soluttautuminen / irtautuminen | JJR (*irtautumisreitti*) |
-| Resection | Taaksepäinleikkaus | – (no PV source; MTK covers only forward intersection) |
+| Resection (tool) | Oman paikan määritys; the classic method is *taaksepäinleikkaus* | SKK 2026 (*oman paikan määrittäminen*); MTK covers only forward intersection |
 | Range rings | Etäisyysrenkaat | – |
 | Track / breadcrumbs (recorded path); single breadcrumb | Kulkujälki; jälkipiste | – |
-| Track History | Kulkujälkihistoria | – |
+| Track History | Kulkujälkihistoria; tool label *Kulkujäljet* | – |
 | Point of Interest | Kiinnostava kohde | – |
 | Self / Self marker | Oma sijainti / oma merkki | – |
 | Nautical mile (NM) | Meripeninkulma (mpk) | MSK. Map readouts show *NM*, which comes from the code |
@@ -298,11 +299,10 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Broadcast | Lähetä kaikille | – |
 | Stale (data) | Vanhentunut | – |
 | Data package / mission package | Datapaketti; *paketti* in short messages | – |
-| Alert / emergency alert | Hälytys / hätähälytys | MS |
+| Alert / emergency alert | Hälytys / hätähälytys; the Alert tool is *Hätähälytys* | MS |
 | Notification | Ilmoitus | MS |
 | Iconset | Kuvakesarja | – |
 | Track number (TADIL-J) / datalink ID | Raitanumero / datalinkkitunnus | – |
-| Point Dropper | Pisteen lisäys | – |
 | Quick Pic | Pikakuva | – |
 | Telestration | Vapaan käden piirto | – |
 | Viewshed | Näkyvyysalue | – . *Open:* MPKK 2003 (Hyytiäinen) uses *näkemäalue* |
@@ -312,10 +312,31 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Polyline (line string) | Murtoviiva | SML II, GIS |
 | Map tile / tileset | Karttatiili / tiilisarja | GIS. *Ruutu* is kept for the MGRS square |
 | Feature (GIS) | Kohde | GIS |
-| Geofence | Geoaita | – (MS: *paikannusraja*; *geoaita* is the established everyday term) |
+| Geofence; geofence monitoring | Alueraja; aluerajan valvonta (tracked items: *valvotut kohteet*) | Owner's decision. *Aluevalvonta* is not used: in law and PV usage it means territorial surveillance |
 | Heat map | Lämpökartta | MS |
 | Dismiss (alert) | Kuittaa | – . The key `dismiss` is also used as a plain close button (upstream issue) |
 | Layer (map layer, WMS layer) | Taso; overlay = karttataso | – |
 | Radial menu | Ympyrävalikko | – (MS: *kehävalikko*) |
 | Shape (drawn object) | Muoto | MS |
 | Scan (search for devices, files or apps) | Haku | – |
+
+### Tool names
+
+| English (tool) | Suomi | Note |
+|---|---|---|
+| Point Dropper | Merkin lisäys | – |
+| Red X (tool) | Koordinaatit kartalta | The map marker itself stays *punainen X* |
+| Bloodhound | Kohteen seuranta | Strings say *seuranta*, *seurattava kohde* |
+| Digital Pointer | Osoitin (DP) | *DP-osoitin* in sentences |
+| Toolbar Manager | Työkalupalkit | – |
+| Elevation Tools | Maastoanalyysi | Tile has a `\u200B` break point |
+| Rubber Sheet | Georeferointi | *georeferoitu kuva / 3D-malli* |
+| Link EUD | Linkitä TAK.GOV-tiliin | – |
+| First Person | FPV-näkymä | – |
+| Go To | Siirry sijaintiin | The dialog button stays *Siirry* |
+| Orientation (screen) | Näytön suunta | *Suuntaus* is a map term in PV usage |
+| Import | Tuo tiedostoja | The button stays *Tuo* |
+| Quit | Sulje ATAK | *Lopeta* stays for stopping an action (navigation, editing, monitoring) |
+| End (toolbar button) | Valmis | The key is shared with the track history date range (upstream issue) |
+| NO GNSS / NO GPS (map warning) | EI GNSS-SIGNAALIA / EI GPS-SIGNAALIA | 5.8 says GNSS, 5.5 says GPS |
+| Quick Nav, Lasso Select, Clear Content | Pikanavigointi, Lassovalinta, Tyhjennä sisältö | Unchanged after review |

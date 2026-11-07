@@ -785,8 +785,8 @@
   <string name="preferences_text421b">Tärkeä huomautus: Android-käyttöjärjestelmä yrittää poistaa toimintoja käytöstä säästääkseen akkua myös operatiivisessa käytössä.\n\n   Valitse **KYLLÄ** tai **SALLI**, kun sinulta kysytään, haluatko poistaa optimoinnit käytöstä tai lopettaa akun käytön optimoinnin.\n\nMuuten sovellus ei toimi kunnolla.</string>
   <string name="preferences_text423">"Voit lukea loppukäyttäjän käyttöoikeussopimuksen (EULA) alla olevasta painikkeesta. "</string>
   <string name="preferences_text424">Painamalla ”Hyväksyn”-painiketta hyväksyt käyttöoikeussopimuksen ehdot.\n</string>
-  <string name="preferences_text425">Hyväksyn.</string>
-  <string name="preferences_text426">En hyväksy.</string>
+  <string name="preferences_text425">Hyväksyn</string>
+  <string name="preferences_text426">En hyväksy</string>
   <string name="preferences_text428">"Haluatko asettaa: "</string>
   <string name="preferences_text429">" ja siihen liittyvät asetukset?"</string>
   <string name="preferences_text432">Valitse ulkoinen asetustiedosto</string>
@@ -2225,7 +2225,7 @@
   <string name="imagery_change">Kuva-aineiston vaihto</string>
   <string name="mobile_imagery">Mobiilikuva-aineisto</string>
   <string name="mobile_imagery_summ">Vaihda karttalähteeksi Paikallinen (Verkko-tilan sijaan), niin näet nykyisen karttanäkymän alueen paikalliset tiedostot</string>
-  <string name="imagery">Kuva-aineisto</string>
+  <string name="imagery">Kuva-\u200Baineisto</string>
   <string name="maps">Kartat</string>
   <string name="mobile">Mobiili</string>
   <string name="favs">Suosikit</string>
@@ -3240,7 +3240,7 @@
   <string name="actionbar_orientation">Suuntaus</string>
   <string name="actionbar_redxtool">Punainen X</string>
   <string name="actionbar_bloodhoundtool">Bloodhound</string>
-  <string name="actionbar_rangeandbearing">Etäisyystyökalut</string>
+  <string name="actionbar_rangeandbearing">Etäisyys ja suunta</string>
   <string name="actionbar_routes">Reitit</string>
   <string name="actionbar_videoplayer">Video</string>
   <string name="actionbar_contacts">Yhteystiedot</string>
@@ -3251,7 +3251,7 @@
   <string name="actionbar_drawingtools">Piirtotyökalut</string>
   <string name="actionbar_quicknav">Pikanavigointi</string>
   <string name="actionbar_quickpic">Pikakuva</string>
-  <string name="actionbar_trackhistory">Kulkujälkihistoria</string>
+  <string name="actionbar_trackhistory">Kulkujäljet</string>
   <string name="mil_actionbar_firetools">Tulenkäytön työkalut</string>
   <string name="actionbar_gallery">Galleria</string>
   <string name="actionbar_elevationtools">Korkeus</string>
@@ -3343,7 +3343,7 @@
   <string name="resection_workflow">Taaksepäinleikkauksen työnkulku</string>
   <string name="resection">Taaksepäinleikkaus</string>
   <string name="resection_options">Taaksepäinleikkauksen asetukset</string>
-  <string name="actionbar_resection">Taaksepäinleikkaus</string>
+  <string name="actionbar_resection">Taaksepäin\u200Bleikkaus</string>
   <string name="resection_bearing_title">Suunta: %1$s -&gt; %2$s</string>
   <string name="resection_new_landmark">Uusi maamerkki</string>
   <string name="resection_classic_tool_description">Perinteinen taaksepäinleikkaus. Käyttää tähystäjän sijainnista kahteen tai useampaan maamerkkiin mitattuja suuntia</string>
@@ -3935,7 +3935,7 @@
   <string name="unable_to_determine_file_type">Tiedostotyyppiä ei voitu määrittää: %s</string>
   <string name="unable_to_find_application">Sovellusta tiedoston %s näyttämiseen ei löytynyt</string>
   <string name="error_occurred_submtting_feedback">Käyttäjäpalautteen lähetys epäonnistui: %s</string>
-  <string name="callsign_and_device_preferences">Kutsutunnus- ja laiteasetukset</string>
+  <string name="callsign_and_device_preferences">Kutsutunnus ja laite</string>
   <string name="control_preferences">Ohjausasetukset</string>
   <string name="network_preferences">Verkkoasetukset</string>
   <string name="legacy_preferences">Vanhat asetukset</string>

@@ -3031,7 +3031,7 @@
   <string name="preferences_text106">Pisin raportointiväli sekunteina (esim. kerran 20 sekunnissa hitaasti liikuttaessa) epäluotettavilla protokollilla (esim. multicast). Huom.: myös muut tapahtumat voivat käynnistää raportoinnin (esim. kutsutunnuksen muutos)</string>
   <string name="preferences_text108">Lyhin raportointiväli sekunteina (esim. joka toinen sekunti nopeasti liikuttaessa) epäluotettavilla protokollilla (esim. multicast). Huom.: myös muut tapahtumat voivat käynnistää raportoinnin (esim. kutsutunnuksen muutos)</string>
   <string name="tacrover_e_quirks_mode">TacRover-E-yhteensopivuustila</string>
-  <string name="tre_firmware_warning">ota käyttöön vain, jos analogiseen videoon ei saada yhteyttä --------- koskee seuraavia yhdistelmiä --------- \tlaiteohjelmisto 1.1 vain osoitteessa 192.168.50.1 \t\ttai \tlaiteohjelmisto 1.3 vain osoitteessa 192.168.80.1</string>
+  <string name="tre_firmware_warning">Ota käyttöön vain, jos analogiseen videoon ei saada yhteyttä --------- koskee seuraavia yhdistelmiä --------- \tlaiteohjelmisto 1.1 vain osoitteessa 192.168.50.1 \t\ttai \tlaiteohjelmisto 1.3 vain osoitteessa 192.168.80.1</string>
   <string name="isrv_control_prefs">Rover-ohjauksen asetukset</string>
   <string name="adjust_ISRV_settings">Säädä Rover-ohjauksen asetuksia</string>
   <string name="rover_controls">Rover-ohjaimet</string>

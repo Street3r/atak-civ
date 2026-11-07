@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="overlays_scaling_names">
+        <item>@string/label_scaling_normal</item>
+        <item>1,25x</item>
+        <item>1,5x</item>
+        <item>1,75x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="alt_display_label">
+        <item>Ellipsoidikorkeus (HAE)</item>
+        <item>Merenpinnasta (MSL)</item>
+    </string-array>
+    <string-array name="north_refs_label">
+        <item>Napapohjoinen</item>
+        <item>Neulapohjoinen</item>
+        <item>Karttapohjoinen</item>
+    </string-array>
+    <string-array name="rb_distance_label">
+        <item>Vinoetäisyys</item>
+        <item>Maanpintaa pitkin</item>
+    </string-array>
+    <string-array name="delete_stale_names">
+        <item>Heti</item>
+        <item>1 minuutti</item>
+        <item>5 minuuttia</item>
+        <item>20 minuuttia</item>
+        <item>1 tunti</item>
+        <item>6 tuntia</item>
+        <item>1 vuorokausi</item>
+    </string-array>
+    <string-array name="overlay_manager_size_names">
+        <item>50 %</item>
+        <item>33 %</item>
+        <item>25 %</item>
+    </string-array>
+    <string-array name="location_marker_enteries">
+        <item>Oletus</item>
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+    </string-array>
+    <string-array name="polar_distance_units">
+        <item>Metrit</item>
+        <item>Kilometrit</item>
+        <item>Jalat</item>
+        <item>Mailit</item>
+        <item>Meripeninkulmat</item>
+    </string-array>
+    <string-array name="polar_north_options">
+        <item>Napapohjoinen</item>
+        <item>Neulapohjoinen</item>
+        <item>Karttapohjoinen</item>
+    </string-array>
+    <string-array name="polar_radial_units">
+        <item>Asteet</item>
+        <item>Piirut (6400)</item>
+    </string-array>
+    <string-array name="polar_zoom_method">
+        <item>Siirry kohteeseen</item>
+        <item>Automaattinen zoomaus</item>
+    </string-array>
+    <string-array name="reporting_strategy_names">
+        <item>Dynaaminen (lähetä useammin liikkeessä)</item>
+        <item>Vakio (lähetä säännöllisin välein)</item>
+    </string-array>
+    <string-array name="coordinate_entry_names">
+        <item>MGRS</item>
+        <item>DD</item>
+        <item>DM</item>
+        <item>DMS</item>
+        <item>UTM</item>
+        <item>Osoite</item>
+    </string-array>
+</resources>

@@ -12,6 +12,15 @@ Subcommands
 Translation files are plain UTF-8 text, one entry per line:
     key<TAB>Finnish value (Android resource escaping, same as strings.xml)
 Lines starting with '#' are ignored. Later files override earlier ones.
+The token {SP} is expanded to an escaped space (backslash-u0020).
+
+String arrays with literal (non-@string) items are translated in arrays.txt in
+the same work directory, one item per line:
+    array_name[index]<TAB>Finnish value
+build writes values-fi/arrays.xml with only those arrays; untranslated items
+are copied from the English source, so item counts always match. Arrays whose
+displayed text is parsed back by the code (e.g. Enum.valueOf on the selected
+spinner text) must not be listed there.
 """
 import argparse
 import collections
@@ -25,6 +34,9 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")
 RES = os.path.join(ROOT, "atak", "ATAK", "app", "src", "main", "res")
 EN = os.path.join(RES, "values", "strings.xml")
 FI = os.path.join(RES, "values-fi", "strings.xml")
+EN_ARRAYS = os.path.join(RES, "values", "arrays.xml")
+FI_ARRAYS = os.path.join(RES, "values-fi", "arrays.xml")
+ARRAY_KEY_RE = re.compile(r"^([A-Za-z0-9_]+)\[(\d+)\]$")
 
 STRING_RE = re.compile(r'<string name="([^"]+)"([^>]*)>(.*?)</string>', re.S)
 PLACEHOLDER_RE = re.compile(r"%(?:\d+\$)?[-#+ 0,(]*\d*(?:\.\d+)?[a-zA-Z%]")
@@ -57,12 +69,33 @@ def read_tsv(paths):
                 if "\t" not in line:
                     sys.exit(f"{p}:{n}: missing TAB: {line[:80]}")
                 key, val = line.split("\t", 1)
-                out[key.strip()] = val
+                # {SP} is shorthand for an escaped, non-collapsible space
+                out[key.strip()] = val.replace("{SP}", chr(92) + "u0020")
     return out
+
+
+def read_keep(work):
+    """Keys deliberately left in English (keep.txt: one key per line, # comments)."""
+    path = os.path.join(work or "", "keep.txt")
+    if not work or not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as fh:
+        return [l.split("#", 1)[0].strip() for l in fh if l.split("#", 1)[0].strip()]
 
 
 def placeholders(s):
     return sorted(m for m in PLACEHOLDER_RE.findall(s) if m != "%%")
+
+
+# Keys whose Finnish text deliberately drops the leading space of the English
+# fragment because it attaches directly to the preceding word ("KML-kulkujälki",
+# "Alpha, alkuaika").
+WHITESPACE_OK = {
+    "track_exported",
+    "track_export_failed",
+    "server_export_failed",
+    "beginning_at",
+}
 
 
 def problems(key, en_val, fi_val):
@@ -88,14 +121,59 @@ def problems(key, en_val, fi_val):
         errs.append("empty")
     # surrounding whitespace markers should survive
     for mark in ("\\u0020",):
+        if key in WHITESPACE_OK:
+            break
         if en_val.startswith(mark) != fi_val.startswith(mark) or en_val.endswith(mark) != fi_val.endswith(mark):
             errs.append(f"leading/trailing {mark} mismatch")
     return errs
 
 
+def load_arrays(path):
+    """Return OrderedDict name -> (attrs, [raw item values]) for <string-array>."""
+    out = collections.OrderedDict()
+    if not os.path.exists(path):
+        return out
+    with open(path, encoding="utf-8") as fh:
+        src = fh.read()
+    for m in re.finditer(r'<string-array\s+([^>]*)>(.*?)</string-array>', src, re.S):
+        attrs = m.group(1)
+        name = re.search(r'name="([^"]+)"', attrs).group(1)
+        out[name] = (attrs, re.findall(r"<item>(.*?)</item>", m.group(2), re.S))
+    return out
+
+
+def read_array_tr(work):
+    path = os.path.join(work or "", "arrays.txt")
+    if not work or not os.path.exists(path):
+        return collections.OrderedDict()
+    return read_tsv([path])
+
+
+def array_problems(en_arrays, tr):
+    """Validate arrays.txt entries; returns list of (key, message)."""
+    out = []
+    for key, val in tr.items():
+        m = ARRAY_KEY_RE.match(key)
+        if not m:
+            out.append((key, "key must look like name[index]")); continue
+        name, idx = m.group(1), int(m.group(2))
+        if name not in en_arrays:
+            out.append((key, "unknown array")); continue
+        attrs, items = en_arrays[name]
+        if 'translatable="false"' in attrs:
+            out.append((key, "array is translatable=false")); continue
+        if idx >= len(items):
+            out.append((key, f"index out of range ({len(items)} items)")); continue
+        if items[idx].startswith("@"):
+            out.append((key, f"item is a reference ({items[idx]}); translate the string instead")); continue
+        out.extend((key, e) for e in problems(key, items[idx], val))
+    return out
+
+
 def cmd_dump(args):
     en = translatable(load(EN))
     done = read_tsv(sorted(glob.glob(os.path.join(args.work, "*.tsv")))) if args.work else {}
+    done = dict(done, **{k: "" for k in read_keep(args.work)})
     refs = {lang: load(os.path.join(RES, f"values-{lang}", "strings.xml")) for lang in args.ref}
     keys = [k for k in en if k not in done]
     if args.start:
@@ -143,9 +221,45 @@ def cmd_build(args):
         fh.write("\n".join(cleaned) + "\n")
     n = sum(1 for k in tr if k in en and 'translatable="false"' not in en[k][0])
     print(f"wrote {FI}: {n}/{len(translatable(en))} strings")
+    build_arrays(args.work)
+
+
+def build_arrays(work):
+    tr = read_array_tr(work)
+    if not tr:
+        return
+    en_arrays = load_arrays(EN_ARRAYS)
+    bad = array_problems(en_arrays, tr)
+    if bad:
+        for k, e in bad:
+            print(f"arrays.txt {k}: {e}", file=sys.stderr)
+        sys.exit("arrays.txt has problems; values-fi/arrays.xml not written")
+    by_name = collections.defaultdict(dict)
+    for key, val in tr.items():
+        m = ARRAY_KEY_RE.match(key)
+        by_name[m.group(1)][int(m.group(2))] = val
+    lines = ['<?xml version="1.0" encoding="utf-8"?>', "<resources>"]
+    for name, (attrs, items) in en_arrays.items():
+        if name not in by_name:
+            continue
+        lines.append(f'    <string-array name="{name}">')
+        for i, item in enumerate(items):
+            lines.append(f"        <item>{by_name[name].get(i, item)}</item>")
+        lines.append("    </string-array>")
+    lines.append("</resources>")
+    with open(FI_ARRAYS, "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(lines) + "\n")
+    print(f"wrote {FI_ARRAYS}: {len(by_name)} arrays, {len(tr)} items")
 
 
 def cmd_check(args):
+    if args.file and os.path.basename(args.file) == "arrays.txt":
+        tr = read_tsv([args.file])
+        bad = array_problems(load_arrays(EN_ARRAYS), tr)
+        for k, e in bad:
+            print(f"{k}: {e}")
+        print(f"checked {len(tr)} array items, {len(bad)} problems")
+        sys.exit(1 if bad else 0)
     en = load(EN)
     path = args.file or FI
     if not path.endswith(".tsv"):
@@ -167,7 +281,27 @@ def cmd_check(args):
             print(f"{k}: {e}\n   en: {en[k][1]}\n   fi: {v}"); bad += 1
     total = len(translatable(en))
     print(f"checked {len(fi)} strings, {total - len(fi)} untranslated, {bad} problems")
+    if not args.file and os.path.exists(FI_ARRAYS):
+        bad += check_built_arrays()
     sys.exit(1 if bad else 0)
+
+
+def check_built_arrays():
+    """values-fi/arrays.xml: well-formed, known arrays, same item counts as English."""
+    try:
+        ET.parse(FI_ARRAYS)
+    except ET.ParseError as e:
+        print(f"arrays.xml parse error: {e}")
+        return 1
+    en_arrays, fi_arrays = load_arrays(EN_ARRAYS), load_arrays(FI_ARRAYS)
+    bad = 0
+    for name, (_, items) in fi_arrays.items():
+        if name not in en_arrays:
+            print(f"arrays.xml {name}: unknown array"); bad += 1; continue
+        if len(items) != len(en_arrays[name][1]):
+            print(f"arrays.xml {name}: {len(items)} items, English has {len(en_arrays[name][1])}"); bad += 1
+    print(f"checked {len(fi_arrays)} arrays, {bad} problems")
+    return bad
 
 
 def main():

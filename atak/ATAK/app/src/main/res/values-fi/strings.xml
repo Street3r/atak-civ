@@ -144,7 +144,7 @@
   <string name="chatgroupPreferences">Chat-ryhmien asetukset</string>
   <string name="staledataPreferences">Vanhentuneiden tietojen asetukset</string>
   <string name="usertouchPreferences">Kosketusasetukset</string>
-  <string name="otherPreferences">Muut ohjausasetukset</string>
+  <string name="otherPreferences">Näytön lisäasetukset</string>
   <string name="androidPreferences">Androidin näyttöasetukset</string>
   <string name="addressPreferences">Osoitehaun asetukset</string>
   <string name="initialPreferences">IP-pisteen asetukset</string>
@@ -160,7 +160,7 @@
   <string name="supportPreferences">Tukiasetukset</string>
   <string name="loggingPreferences">Lokiasetukset</string>
   <string name="advancedloggingPreferences">Lokin lisäasetukset</string>
-  <string name="gpsPreferences">GPS-kuvakkeen asetukset</string>
+  <string name="gpsPreferences">Oman sijainnin väri / koko</string>
   <string name="contact_list_button_select_all">Valitse kaikki</string>
   <string name="contact_list_button_deselect_all">Poista valinnat</string>
   <string name="contact_list_button_share">Lähetä</string>
@@ -236,7 +236,7 @@
   <string name="app_mgmt_auto_sync">Automaattinen synkronointi</string>
   <string name="app_mgmt_update_server_hint">Päivityspalvelimen URL-osoite</string>
   <string name="preferences_text11">Tarkista päivitykset</string>
-  <string name="preferences_text12">Tarkista sovelluspäivitykset nyt koskettamalla</string>
+  <string name="preferences_text12">Tarkista sovelluspäivitykset nyt napauttamalla</string>
   <string name="preferences_text15">Laajennusten lataus</string>
   <string name="preferences_text16">Lataa laajennukset käynnistyksen yhteydessä</string>
   <string name="preferences_text17">Pitää laajennukset ja niihin liittyvät sovellukset ajan tasalla. Voidaan käyttää oletussäilön tai sisäverkon oman säilön kanssa.</string>
@@ -758,7 +758,7 @@
   <string name="preferences_text373">Palauta sovelluksen vihjeet valitsemalla.</string>
   <string name="preferences_text3731">Näytä TAK-laitemääritysnäkymä valitsemalla.</string>
   <string name="preferences_text374">Lähetä sovelluslokit nyt</string>
-  <string name="preferences_text375">Vie sovelluslokit nyt koskettamalla.</string>
+  <string name="preferences_text375">Lähetä sovelluslokit nyt napauttamalla.</string>
   <string name="preferences_text376">Lähetä sovelluslokit automaattisesti</string>
   <string name="autoUploadLogsSummary">Lähetä sovelluslokit TAK Serverille sovelluksen käynnistyessä.</string>
   <string name="preferences_logging_desc">Hallitse sovellustietojen, kuten virheiden, diagnostiikkatietojen ja käyttötietojen, kirjaamiseen liittyviä asetuksia.</string>
@@ -878,7 +878,7 @@
   <string name="rb_dynamic_second_prompt">Päätepisteitä voi vetää.</string>
   <string name="rb_prompt">Napauta pistettä, josta mitataan. Paina karttakohdetta pitkään\nmitataksesi omasta sijainnistasi siihen pisteeseen.</string>
   <string name="rb_prompt2">Siirrä ankkuripistettä napauttamalla mitä tahansa kohtaa.</string>
-  <string name="rb_prompt3">Kosketa pistettä, johon etäisyys ja suunta mitataan</string>
+  <string name="rb_prompt3">Napauta pistettä, johon etäisyys ja suunta mitataan</string>
   <string name="rb_measure_prompt">Napauta pistettä, johon mitataan.</string>
   <string name="rbcircle_center_prompt">Napauta haluamaasi keskipistettä.</string>
   <string name="rb_bullseye">Sijoita Bullseye-keskipiste napauttamalla karttaa.\nSyötä koordinaatit käsin pitkällä painalluksella.</string>
@@ -1947,7 +1947,7 @@
   <string name="apk_directory_no_apks_hint_title">Valitse kansio</string>
   <string name="apk_directory_no_apks_hint">Siirry yläkansioon ja valitse APK-tiedostot sisältävän kansion vieressä oleva valintaruutu</string>
   <string name="confirm_directory">Vahvista kansio</string>
-  <string name="items">%d kohdetta</string>
+  <string name="items">%d kpl</string>
   <string name="single_item">1 kohde</string>
   <string name="current_directory">"Nykyinen kansio: "</string>
   <string name="directory_empty">Kansio on tyhjä</string>
@@ -2291,7 +2291,7 @@
   <string name="no_image_editors">Kuvankäsittelyohjelmia ei ole asennettu</string>
   <!--Elevation Tools-->
   <string name="heatmap">Lämpökartta</string>
-  <string name="viewshed">Näkyvyysalue</string>
+  <string name="viewshed">Näkyvyys\u200Balue</string>
   <string name="terrainslope">Maaston kaltevuus</string>
   <string name="hide_viewshed">Poista näkyvyysalue</string>
   <string name="select_viewshed">Valitse näkyvyysalue</string>
@@ -2416,17 +2416,17 @@
   <string name="number_alerts">Hälytyksiä: %d</string>
   <string name="view">Näytä</string>
   <!--Radio Controls-->
-  <string name="ppp_mode_only">vain PPP-tila</string>
+  <string name="ppp_mode_only">Vain PPP-tila</string>
   <string name="watch">Katso</string>
   <string name="status_disconnected">Tila: ei yhteyttä</string>
   <string name="radio_controls">Radion ohjaus</string>
   <string name="radio_state_disconnecting">katkaistaan PPP-sarjayhteys</string>
   <string name="radio_state_connecting">yritetään PPP-sarjayhteyttä</string>
   <string name="radio_online">"yhteydessä: "</string>
-  <string name="radio_device_not_rooted">laitetta %s ei ole rootattu</string>
-  <string name="radio_device_unsupported">laitetta %s ei tueta</string>
-  <string name="radio_device_might_be_supported">laite %s saattaa olla tuettu</string>
-  <string name="radio_device_supported">laite %s on tuettu</string>
+  <string name="radio_device_not_rooted">Laitetta %s ei ole rootattu</string>
+  <string name="radio_device_unsupported">Laitetta %s ei tueta</string>
+  <string name="radio_device_might_be_supported">Laite %s saattaa olla tuettu</string>
+  <string name="radio_device_supported">Laite %s on tuettu</string>
   <string name="cable">Kaapeli</string>
   <string name="multifunction_cable">Monitoimikaapeli</string>
   <string name="radio_prc_152a_details1">Harris Vulos SA toimii vain CT-tilassa\nSA-tiedot kaapelilla 12041—5662—01 tai vastaavalla PRC-152A-kaapelilla\n\n\n</string>
@@ -2806,7 +2806,7 @@
   <string name="download_available_via_import_manager">%s on ladattavissa kohdasta Karttatasot &gt; Verkkoresurssit</string>
   <string name="switch_orientation">Vaihda näytön suunta</string>
   <string name="import_manager_only_available_in_landscape">Tuonnin hallinta on käytettävissä vain vaakasuunnassa</string>
-  <string name="importmgr_count_items">%d kohdetta</string>
+  <string name="importmgr_count_items">%d kpl</string>
   <string name="importmgr_count_empty">Tyhjä</string>
   <string name="verify_download">Vahvista lataus</string>
   <string name="importmgr_download_remote_resource_to_local_device">Ladataanko etäresurssi ”%s” laitteeseen?</string>
@@ -3021,7 +3021,7 @@
   <string name="callsign_lower">kutsutunnus</string>
   <string name="callsign_pref_summary">Määrittää tämän laitteen kutsutunnuksen.</string>
   <string name="callsign_pref_summary2">Määrittää tämän laitteen kutsutunnuksen, tiimin ja roolin.</string>
-  <string name="preferences_text127">Valmistele sovellus kloonausta varten koskettamalla. Toiminto tyhjentää kutsutunnuksen ja laitteen yksilöllisen tunnisteen ja sulkee sovelluksen. Älä käynnistä sovellusta uudelleen sen sulkeuduttua. Kloonaa Android-järjestelmä. Kun sovellus käynnistetään kloonatussa laitteessa, nämä tiedot luodaan uudelleen.</string>
+  <string name="preferences_text127">Valmistele sovellus kloonausta varten napauttamalla. Toiminto tyhjentää kutsutunnuksen ja laitteen yksilöllisen tunnisteen ja sulkee sovelluksen. Älä käynnistä sovellusta uudelleen sen sulkeuduttua. Kloonaa Android-järjestelmä. Kun sovellus käynnistetään kloonatussa laitteessa, nämä tiedot luodaan uudelleen.</string>
   <string name="preferences_text462">Yksilöllinen tunniste ja kutsutunnus tyhjennetään tämän laitteen kloonauksen valmistelemiseksi.</string>
   <string name="preferences_text464">Yksilöllinen tunniste ja kutsutunnus on tyhjennetty. Sovellus suljetaan nyt. Älä käynnistä sovellusta uudelleen ennen kuin laite on kloonattu.</string>
   <string name="preferences_text454">Oma sijainti -tapahtuman yhteystiedoissa käytettävä kutsutunnus</string>
@@ -3417,7 +3417,7 @@
   <string name="contour_show">Näytä</string>
   <string name="contour_gen_contour">Luo</string>
   <string name="contour_choose_line_color">Valitse korkeuskäyrien väri</string>
-  <string name="contour_lines">Korkeuskäyrät</string>
+  <string name="contour_lines">Korkeus\u200Bkäyrät</string>
   <!-- Map controls -->
   <string name="map_controls">Kartan ohjaimet</string>
   <string name="imagery_transparency">Kartan kuva-aineiston läpinäkyvyys</string>
@@ -3433,7 +3433,7 @@
   <string name="enable_faux_reverse_summ">Kääntää korvaavan navigointipalkin painikkeiden järjestyksen niin, että Takaisin-painike on vaakasuunnassa alhaalla ja pystysuunnassa vasemmalla.</string>
   <string name="rendering_3d_options">3D- ja piirtoasetukset</string>
   <string name="coloring_and_tinting">Väri / sävytys</string>
-  <string name="other_misc_display_options">Muut näyttöasetukset</string>
+  <string name="other_misc_display_options">Näytön lisäasetukset</string>
   <string name="hsppplink">Pisteestä pisteeseen -yhteys tukee suurta nopeutta</string>
   <string name="hsppplink_summary">Kun valittu, järjestelmän pisteestä pisteeseen -yhteyttä pidetään suurnopeuksisena. Älä ota käyttöön ilman ohjetta. Uudemmat radiot tukevat suurnopeuksisia pisteestä pisteeseen -tunneleita. Vanhemmat radiot tukevat sarjaliikenteeseen perustuvia pisteestä pisteeseen -yhteyksiä, jotka eivät ole suurnopeuksisia. Vanhemmilla radioilla asetus ylikuormittaa yhteyden ja käytännössä estää sen käytön.</string>
   <!-- Rubber sheet -->
@@ -4906,7 +4906,7 @@
   <string name="terrain_elevation_self_marker_title">Käytä korkeusmallia GPS-korkeuden sijaan</string>
   <string name="terrain_elevation_self_marker_summary">Hylkää GPS:n antaman korkeustiedon ja käyttää sen sijaan digitaalista korkeusmallia (DTED)</string>
   <string name="report_takv_title">Ilmoita TAK-versionumero SA-viestissä</string>
-  <string name="report_takv_summary">Lisää TAK-version SA-viestiin tilannetietoisuuden tueksi</string>
+  <string name="report_takv_summary">Liittää TAK-version SA-viestiin tilannetietoisuuden tueksi</string>
   <string name="disable_autolink_url_title">Estä karttakohteiden linkkien avaaminen</string>
   <string name="disable_autolink_url_summary">Avattuun karttakohteeseen voi liittyä URL-osoitteita. Tämä estää niiden avaamisen ulkoiseen selaimeen napauttamalla.</string>
   <string name="tilt_rotation_autoclose_title">Kallistus- ja kiertovalikko sulkeutuu automaattisesti</string>
@@ -5408,7 +5408,7 @@
   <string name="g_m_oaof______x">Panssariesteet, kiinteät ja esivalmistetut</string>
   <string name="g_m_oaom______x">Panssariesteet, siirrettävät</string>
   <string name="g_m_oaop______x">Panssariesteet, siirrettävät ja esivalmistetut</string>
-  <string name="ms2525c_folder_aviation">Lentoesteet</string>
+  <string name="ms2525c_folder_aviation">Ilmailu</string>
   <string name="g_m_oho_______x">Ilmajohto</string>
   <string name="g_m_oht_______x">Masto</string>
   <string name="ms2525c_folder_tower">Masto</string>

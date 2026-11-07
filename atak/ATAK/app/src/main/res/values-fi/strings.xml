@@ -1323,7 +1323,7 @@
   <string name="point_dropper_text8">"Viimeisin piste: "</string>
   <string name="point_dropper_text9">Paletin otsikko</string>
   <string name="point_dropper_text10">Oma etuliite</string>
-  <string name="point_dropper_text11">Indeksi</string>
+  <string name="point_dropper_text11">Nro</string>
   <string name="point_dropper_text12">Maajoukko</string>
   <string name="point_dropper_text13">Valitse tunnistetieto</string>
   <string name="point_dropper_text14">Tämän kohteen tyyppiä ei voi muuttaa.</string>
@@ -1829,7 +1829,7 @@
   <!--Details-->
   <string name="details_text1">Näytä nimiöt</string>
   <string name="details_text2">Poista kaikki</string>
-  <string name="details_text3">Lopeta muoto</string>
+  <string name="details_text3">Valmis</string>
   <string name="details_text4">Vain nimiö</string>
   <string name="details_text5">Sensorin sijainti</string>
   <string name="details_text6">Näytä näkökenttäkuvio (FOV)</string>
@@ -2689,7 +2689,7 @@
   <!--Import Manager-->
   <string name="importmgr_hit_back_to_cancel">Peruuta painamalla Takaisin</string>
   <string name="select_entity">Valitse kohde</string>
-  <string name="import_manager">Tuonnin hallinta</string>
+  <string name="import_manager">Tuo tiedostoja</string>
   <string name="importmgr_kml_network_link_configuration">KML-verkkolinkin määritykset</string>
   <string name="url">URL</string>
   <string name="importmgr_auto_nrefresh">Automaattinen\npäivitys</string>
@@ -2805,7 +2805,7 @@
   <string name="importmgr_remote_resource_configuration_received">Verkkoresurssin määritys vastaanotettu</string>
   <string name="download_available_via_import_manager">%s on ladattavissa kohdasta Karttatasot &gt; Verkkoresurssit</string>
   <string name="switch_orientation">Vaihda näytön suunta</string>
-  <string name="import_manager_only_available_in_landscape">Tuonnin hallinta on käytettävissä vain vaakasuunnassa</string>
+  <string name="import_manager_only_available_in_landscape">Tuo tiedostoja -työkalu on käytettävissä vain vaakasuunnassa</string>
   <string name="importmgr_count_items">%d kpl</string>
   <string name="importmgr_count_empty">Tyhjä</string>
   <string name="verify_download">Vahvista lataus</string>

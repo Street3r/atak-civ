@@ -73,8 +73,8 @@
   <string name="import_string">Tuo</string>
   <string name="ignore">Ohita</string>
   <string name="show_rings">Näytä etäisyysrenkaat</string>
-  <string name="bullseye_to_center">Keskipisteeseen</string>
-  <string name="bullseye_from_center">Keskipisteestä</string>
+  <string name="bullseye_to_center">Keskelle</string>
+  <string name="bullseye_from_center">Keskeltä</string>
   <string name="poi_title">Kiinnostava kohde</string>
   <string name="multiselect">Monivalinta</string>
   <string name="open">Avaa</string>
@@ -137,7 +137,7 @@
   <string name="bloodhoundRerouteTimerDescription">Määritä, kuinka usein kohteen seuranta tarkistaa, tarvitaanko uusi reitti.</string>
   <string name="bloodhoundRerouteDistanceDescription">Määritä, kuinka kauas reitiltä pisteen on siirryttävä ennen kuin uusi reitti lasketaan.</string>
   <string name="locationPreferences">Sijaintiasetukset</string>
-  <string name="breadcrumbPreferences">Kulkujälkiasetukset</string>
+  <string name="breadcrumbPreferences">Jälkipisteiden asetukset</string>
   <string name="notificationPreferences">Ilmoitusasetukset</string>
   <string name="historyPreferences">Historia-asetukset</string>
   <string name="geochatPreferences">GeoChat (mesh) -verkkoasetukset</string>
@@ -213,7 +213,7 @@
   <string name="voip_assignment_manual_entry">Manuaalinen syöttö</string>
   <string name="voip_assignment_ip">Käytä IP-osoitetta</string>
   <string name="voip_assignment_ip_callsign">Käytä kutsutunnusta ja IP-osoitetta</string>
-  <string name="emergency_sms">Kun ”Lähetä tekstiviesti” -valintaruutu on valittuna ja hälytys annetaan, näihin numeroihin lähetetään automaattisesti tekstiviesti.</string>
+  <string name="emergency_sms">Kun ”Lähetä tekstiviesti hätätilanteessa” -valintaruutu on valittuna ja hälytys annetaan, näihin numeroihin lähetetään automaattisesti tekstiviesti.</string>
   <string name="hostileUpdatePreferences">Lähetä merkki automaattisesti kaikille</string>
   <string name="hostileUpdateSummary">Muuta lähetettävien merkkien päivitysväliä. Toiminto on valittava merkin tietosivulla. Jos arvoksi asetetaan 0, toiminto ei ole käytössä.</string>
   <string name="media">Liitteet</string>
@@ -326,7 +326,7 @@
   <!--Control-->
   <string name="preferences_text42">Poista kaikki merkkityypit kartalta, kun ne vanhenevat</string>
   <string name="preferences_text43">Säädä kuva- ja videomedian asetuksia</string>
-  <string name="preferences_text44">Poista kaikki muut kuin arkistoitavat tyypit laitteesta, kun niiden vanhenemisaika täyttyy. Kohteet poistetaan alla olevan ”Vanhentuneiden kohteiden siivousaika” -asetuksen mukaan.</string>
+  <string name="preferences_text44">Kun valittu, kaikki muut kuin arkistoitavat tyypit poistetaan laitteesta niiden vanhenemisajan täyttyessä. Kohteet poistetaan alla olevan ”Vanhentuneiden kohteiden siivousaika” -asetuksen mukaan.</string>
   <string name="preferences_text45">Poista kohteet laitteesta, kun ne ovat olleet vanhentuneina näin monta minuuttia.</string>
   <string name="preferences_text46">Poista tuntemattomat merkit, kun ne vanhenevat</string>
   <string name="preferences_text47">Poista tuntemattomat merkkityypit laitteesta, kun niiden vanhenemisaika täyttyy.</string>
@@ -950,7 +950,7 @@
   <string name="rectangle_corner1_prompt">Kolmen pisteen syöttö (2P+S). Valitse suorakulmion ensimmäinen kulma.</string>
   <string name="rectangle_corner2_prompt">Valitse suorakulmion toinen kulma sivun määrittämiseksi.</string>
   <string name="rectangle_corner3_prompt">Valitse suorakulmion syvyys.</string>
-  <string name="polygon_prompt">Sijoita muodon kärkipiste napauttamalla sijaintia.\nSulje muoto napauttamalla ensimmäistä pistettä.\nLopeta viiva napauttamalla ”Lopeta muoto”.</string>
+  <string name="polygon_prompt">Sijoita muodon kärkipiste napauttamalla sijaintia.\nSulje muoto napauttamalla ensimmäistä pistettä.\nLopeta viiva napauttamalla ”Valmis”.</string>
   <string name="telestrate_locked_prompt">Vapaan käden piirto käytössä\nKartan vieritys ja zoomaus pois käytöstä</string>
   <string name="telestrate_unlocked_prompt">Vapaan käden piirto tauolla\nKartan vieritys ja zoomaus käytössä</string>
   <string name="circle_resize_prompt">Siirrä painamalla keskipistettä pitkään tai muuta kokoa painamalla reunaa pitkään.</string>
@@ -1171,7 +1171,7 @@
   <string name="rb_editor_move">Siirrä pistettä</string>
   <string name="rb_coord_title">"Anna koordinaatti: "</string>
   <string name="rb_coord_title_readonly">"Muunna koordinaatti: "</string>
-  <string name="bloodhound_dialog">Kohteen seurannan asetukset</string>
+  <string name="bloodhound_dialog">Kohteen seurannan aloitus</string>
   <string name="bloodhound_dialog2">"Valitse\nkartalta"</string>
   <string name="rb_circle_dialog">"Anna uusi säde yksikössä "</string>
   <string name="custom">Mukautettu</string>
@@ -1432,7 +1432,7 @@
   <string name="speed_title">Nopeus:</string>
   <string name="course">Kulkusuunta:</string>
   <string name="summary">Yhteenveto</string>
-  <string name="auto_send">Autom. lähetys</string>
+  <string name="auto_send">Autolähetys</string>
   <string name="initial_point">IP-piste</string>
   <string name="contact_point">Yhteydenottopiste</string>
   <string name="observer_point">Tähystyspaikka</string>
@@ -1552,7 +1552,7 @@
   <string name="relative_to">Suhteessa kohteeseen</string>
   <string name="bearing">Suunta</string>
   <string name="range">Etäisyys</string>
-  <string name="inclination">Kaltevuuskulma</string>
+  <string name="inclination">Korkeuskulma</string>
   <string name="mgrs_goto">Siirry MGRS-sijaintiin</string>
   <string name="mgrs_location">MGRS-sijainti</string>
   <string name="mgrs_hint1">Ruutu</string>
@@ -2260,7 +2260,7 @@
   <string name="tiles">tiiltä</string>
   <string name="layers">tasoa\u0020</string>
   <string name="tilesets_3">(3 tiilisarjaa)</string>
-  <string name="map_source">Karttalähde</string>
+  <string name="map_source">Lähde</string>
   <string name="select_area">Valitse alue</string>
   <string name="download">Lataa</string>
   <string name="maps_and_favorites">Kartat ja suosikit</string>
@@ -2388,19 +2388,19 @@
   <string name="geofence_now_monitoring_for_many">Valvotaan nyt kohdetta %1$s (%2$d aluerajaa)</string>
   <string name="geofence_now_monitoring_additional_items">Valvotaan nyt %1$d lisäkohdetta, alueraja ”%2$s”</string>
   <string name="monitoring_items">Valvotaan %d kohdetta</string>
-  <string name="geofence_no_items_within_fence_will_rescan">Aidan hakualueella ei ole tällä hetkellä kohteita, haetaan uudelleen säännöllisesti: %s</string>
+  <string name="geofence_no_items_within_fence_will_rescan">Aluerajan hakualueella ei ole tällä hetkellä kohteita, haetaan uudelleen säännöllisesti: %s</string>
   <string name="unable_to_find_geo_fence">Aluerajaa ei löytynyt…</string>
   <string name="geofence_no_selected_items_inside_search_area">Hakualueella ei ole tällä hetkellä valittuja kohteita…</string>
   <string name="geofence_dismissed_all_tracked_items">Kaikki valvotut kohteet kuitattu. Valvonta lopetettu: %s</string>
   <string name="initializing_geo_fence">Alustetaan aluerajaa</string>
-  <string name="searching_fence_space">Haetaan aidan alueelta</string>
+  <string name="searching_fence_space">Haetaan aluerajan sisältä</string>
   <string name="failed_to_find_geo_fence_monitor">Aluerajan valvontaa ei löytynyt…</string>
   <string name="geo_fence_search_space_empty">Aluerajan hakualue on tyhjä</string>
   <string name="geofence_no_matching_items_adjust_or_begin_monitoring">Hakualueella ei ole tällä hetkellä vastaavia kohteita. Muutetaanko aluerajan asetuksia vai aloitetaanko valvonta nyt?</string>
   <string name="adjust">Muuta</string>
   <string name="monitor">Valvo</string>
   <string name="unsupported_geo_fence_shape">Aluerajan muotoa ei tueta</string>
-  <string name="fence_name">Aidan nimi</string>
+  <string name="fence_name">Aluerajan nimi</string>
   <string name="trigger">Laukaisuehto</string>
   <string name="within">Säteellä</string>
   <string name="km">km</string>
@@ -2874,15 +2874,15 @@
   <string name="change_line_color">Vaihda viivan väri</string>
   <string name="multi_polyline_hint">Vaihda viivojen värejä napauttamalla niitä yksitellen</string>
   <string name="done_deleting">Poisto valmis</string>
-  <string name="infil">Soluttautuminen</string>
-  <string name="exfil">Irtautuminen</string>
+  <string name="infil">Meno</string>
+  <string name="exfil">Paluu</string>
   <string name="walking">Jalan</string>
   <string name="driving">Ajoneuvolla</string>
   <string name="flying">Lentäen</string>
   <string name="swimming">Uiden</string>
   <string name="watercraft">Vesikulkuneuvolla</string>
-  <string name="primary">Ensisijainen</string>
-  <string name="secondary">Toissijainen</string>
+  <string name="primary">Pääreitti</string>
+  <string name="secondary">Varareitti</string>
   <string name="ascending_cp">Tarkastuspisteet nousevassa järjestyksessä</string>
   <string name="descending_cp">Tarkastuspisteet laskevassa järjestyksessä</string>
   <string name="export_items">Vie kohteet</string>
@@ -2937,7 +2937,7 @@
   <string name="current">Nykyinen</string>
   <string name="available">Saatavilla</string>
   <string name="app_plugin">Sovellus/laajennus</string>
-  <string name="toolpref_nightvision">Työkaluasetukset/pimeänäön asetukset</string>
+  <string name="toolpref_nightvision">Työkaluasetukset > Pimeänäön asetukset</string>
   <string name="callsign_with_colon">Kutsutunnus</string>
   <string name="control_type">Ohjaustyyppi</string>
   <string name="line_2">Rivi 2</string>
@@ -3956,7 +3956,7 @@
   <string name="reset_hints">Palauta vihjeet</string>
   <string name="atak_docs">ATAK-dokumentit</string>
   <string name="device_details">Laitteen tiedot</string>
-  <string name="tak_init_devic_conf">TAK-laitteen alkumääritykset</string>
+  <string name="tak_init_devic_conf">TAK-laitteen käyttöönotto</string>
   <string name="network_connections">Verkkoasetukset</string>
   <string name="adjust_network_connections">Säädä verkkoyhteyksiä</string>
   <string name="modify_contact_settings">Muokkaa yhteystietoasetuksia</string>
@@ -5659,7 +5659,7 @@
   <string name="disable">Poista käytöstä</string>
   <string name="remove_all_landmarks">Poistetaanko kaikki maamerkit?</string>
   <string name="workflow_with_name">Työnkulku %s</string>
-  <string name="tertiary">Kolmas vaihtoehto</string>
+  <string name="tertiary">2. varareitti</string>
   <string name="original_author">Alkuperäinen tekijä</string>
   <string name="default_grouping">Oletus</string>
   <string name="disable_broadcasting">Poista Lähetä kaikille -painike käytöstä</string>

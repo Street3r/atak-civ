@@ -81,12 +81,15 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Altitude | Korkeus | SML I (field X: korkeus/syvyys) |
 | MSL / HAE / AGL | Merenpinnasta (MSL) / ellipsoidikorkeus (HAE) / korkeus maanpinnasta (AGL) | SML I (X), MTK; HAE and AGL: – |
 | Slant range | Vinoetäisyys | – |
+| Inclination (vertical angle from the observer to the target) | Korkeuskulma | PV and survey usage. *Kaltevuus* is kept for terrain slope |
+| Bullseye direction: From Center / To Center | Keskeltä / Keskelle | *Keskuksesta / Keskukseen* does not fit the button |
 | Waypoint | Reittipiste | TO 10.4 |
 | Checkpoint (route) | Tarkastuspiste | – . *Open.* PV route planning uses *rasti* (TO 2013 and SelvKK 2024: "Jaa reitti rasteiksi noin kilometrin välein"). PV's *tarkastuspiste* / *tarkastuspaikka* is a manned control point (SML, TAKK 2025). *Reittipiste* is taken by *Waypoint* |
-| Route; infil / exfil (route direction) | Reitti; soluttautuminen / irtautuminen | JJR (*irtautumisreitti*) |
+| Route; infil / exfil (route direction) | Reitti; meno / paluu | PV *meno- ja paluureitti*. In ATAK infil/exfil is a generic label and every new route defaults to Infil, so *soluttautuminen* (a covert manoeuvre) is not used. *Irtautuminen* stays for Withdraw and the 9-line Egress |
+| Route type: primary / secondary / tertiary | Pääreitti / varareitti / 2. varareitti | PV *pää- ja varareitti*. Full words, because the labels also stand alone in the route-type list |
 | Resection (tool) | Oman paikan määritys; the classic method is *taaksepäinleikkaus* | SKK 2026 (*oman paikan määrittäminen*); MTK covers only forward intersection |
 | Range rings | Etäisyysrenkaat | – |
-| Track / breadcrumbs (recorded path); single breadcrumb | Kulkujälki; jälkipiste | – |
+| Track / breadcrumbs (recorded path); single breadcrumb | Kulkujälki; jälkipiste. Bread Crumb Preferences = *Jälkipisteiden asetukset* (Track History Preferences = *Kulkujälkihistorian asetukset*) | – |
 | Track History | Kulkujälkihistoria; tool label *Kulkujäljet* | – |
 | Point of Interest | Kiinnostava kohde | – |
 | Self / Self marker | Oma sijainti / oma merkki | – |
@@ -122,6 +125,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Echelon | Johtotaso (joukon koko) | SML I |
 | Echelons | Partio/miehistö, ryhmä, puolijoukkue, joukkue/osasto, komppania/patteri/eskadroona, pataljoona, rykmentti/lennosto, prikaati, divisioona, armeijakunta, armeija, armeijaryhmä/rintama, alue/operaatioalue, johtoporras (*Command*) | JJR liite 2.3, HJKK (*puolijoukkue*), NS (*command* as an organisation = johtoporras) |
 | Task force | Taisteluosasto | SML I, JJR |
+| Coordination Point (2525C) / Coordinating Point (2525D) | Yhteistoimintapiste | The same control measure in both symbol sets |
 | Reinforced / Reduced | Vahvennettu / heikennetty | SML I |
 | Higher formation | Ylempi johtoporras | SML I, JKK |
 | Unique designation | Yksilöivä nimi | SML I |
@@ -312,7 +316,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Polyline (line string) | Murtoviiva | SML II, GIS |
 | Map tile / tileset | Karttatiili / tiilisarja | GIS. *Ruutu* is kept for the MGRS square |
 | Feature (GIS) | Kohde | GIS |
-| Geofence; geofence monitoring | Alueraja; aluerajan valvonta (tracked items: *valvotut kohteet*) | Owner's decision. *Aluevalvonta* is not used: in law and PV usage it means territorial surveillance |
+| Geofence; geofence monitoring | Alueraja; aluerajan valvonta (tracked items: *valvotut kohteet*) | Owner's decision. *Aluevalvonta* is not used: in law and PV usage it means territorial surveillance. Fence name = *Aluerajan nimi*; trigger Entry / Exit / Both = *Saapuminen / Poistuminen / Molemmat*. The key `exit` is also the app menu's Exit (*Sulje ATAK*), so the 5.8 package has its own `geofence_triggers_names` |
 | Heat map | Lämpökartta | MS |
 | Dismiss (alert) | Kuittaa | – . The key `dismiss` is also used as a plain close button (upstream issue) |
 | Layer (map layer, WMS layer) | Taso; overlay = karttataso | – |

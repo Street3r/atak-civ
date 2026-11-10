@@ -85,6 +85,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Inclination (vertical angle from the observer to the target) | Korkeuskulma | PV and survey usage. *Kaltevuus* is kept for terrain slope |
 | Bullseye direction: From Center / To Center | Keskeltä / Keskelle | *Keskuksesta / Keskukseen* does not fit the button |
 | Waypoint | Reittipiste | TO 10.4 |
+| Navigation cue (route) | Opaste; voice cues = *puheopasteet* | – |
 | Checkpoint (route) | Tarkastuspiste | – . *Open.* PV route planning uses *rasti* (TO 2013 and SelvKK 2024: "Jaa reitti rasteiksi noin kilometrin välein"). PV's *tarkastuspiste* / *tarkastuspaikka* is a manned control point (SML, TAKK 2025). *Reittipiste* is taken by *Waypoint* |
 | Route; infil / exfil (route direction) | Reitti; meno / paluu | PV *meno- ja paluureitti*. In ATAK infil/exfil is a generic label and every new route defaults to Infil, so *soluttautuminen* (a covert manoeuvre) is not used. *Irtautuminen* stays for Withdraw and the 9-line Egress |
 | Route type: primary / secondary / tertiary | Pääreitti / varareitti / 2. varareitti | PV *pää- ja varareitti*. Full words, because the labels also stand alone in the route-type list |
@@ -325,6 +326,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Radial menu | Ympyrävalikko | – (MS: *kehävalikko*) |
 | Shape (drawn object) | Muoto | MS |
 | Scan (search for devices, files or apps) | Haku | – |
+| Repository (plugin and app updates) | Säilö; product repository = *tuotesäilö* | MS. Not *repositorio*. Certificate stores always carry their prefix (*luottamussäilö*, *avainsäilö*) |
 
 ### Tool names
 

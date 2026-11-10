@@ -2926,7 +2926,7 @@
   <string name="about_device">Tietoja laitteesta</string>
   <string name="update_availability">Päivityksen saatavuus</string>
   <string name="availability">Saatavuus</string>
-  <string name="repo">Repositorio</string>
+  <string name="repo">Säilö</string>
   <string name="update_server">Päivityspalvelin</string>
   <string name="os_requirement">Suositeltu käyttöjärjestelmäversio</string>
   <string name="app_is_current">Sovellus on ajan tasalla</string>
@@ -3301,7 +3301,7 @@
   <string name="no_targets">Ei maaleja</string>
   <string name="connection_string">yhteysmerkkijono</string>
   <string name="point_255_255_255_255_12345">Piste: 255.255.255.255:12345</string>
-  <string name="custom_cue">valitse valmis ohje tai kirjoita oma navigointiohje</string>
+  <string name="custom_cue">valitse valmis opaste tai kirjoita oma navigointiopaste</string>
   <string name="push_vulos_sa_configuration">Lähetä VULOS SA -määritykset</string>
   <string name="locally_report_n_testing">Raportoi paikallisesti (testaus)</string>
   <string name="start_address_hint">lähtöosoite</string>
@@ -5747,7 +5747,7 @@
   <string name="action_complete">%s valmis</string>
   <string name="processed_d_products">Käsitelty %d tuotetta</string>
   <string name="sync_packages">Synkronoi paketit</string>
-  <string name="sync_now_respository">Synkronoidaanko laite nyt käytettävissä olevien tuoterepositorioiden kanssa?</string>
+  <string name="sync_now_respository">Synkronoidaanko laite nyt käytettävissä olevien tuotesäilöjen kanssa?</string>
   <string name="network_not_available">verkko ei ole käytettävissä</string>
   <string name="start_point_colon">Lähtöpiste:</string>
   <string name="end_point_colon">Loppupiste:</string>

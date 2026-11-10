@@ -294,6 +294,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | English | Suomi | Source / note |
 |---|---|---|
 | Settings / Preferences | Asetukset | MS |
+| File name extension | Tiedostotunniste | MS. Not bare *tunniste*, which reads as *tunnistetiedot* (credentials) |
 | Plugin | Laajennus | MS |
 | Overlay / Overlay Manager | Karttataso / karttatasojen hallinta | Owner's decision |
 | Image overlay (CIV) / video overlay / FOV overlay | Kuvapäällyste / videon karttapäällyste / näkökenttäkuvio | – |

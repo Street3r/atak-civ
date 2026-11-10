@@ -3010,7 +3010,7 @@
   <string name="spi_update_delay">SPI:n päivitysväli</string>
   <string name="spi_update_delay_summary">Enimmäisaika (sekunteina) SPI-pisteen päivitysten lähettämisen välillä, jos käytössä, vaikka SPI:tä ei muutettaisi. SPI-pisteen siirtäminen paikallisesti lähettää päivityksen heti.</string>
   <string name="bloodhound_text9">Ota käyttöön automaattinen zoomaus, joka näyttää oman sijainnin ja SPI:n karttanäkymässä, kun työkalu käynnistetään ensimmäisen kerran</string>
-  <string name="preferences_text123">Tiedostonimi ilman tunnistetta (hakemisto atak/config/prefs)</string>
+  <string name="preferences_text123">Tiedostonimi ilman tiedostotunnistetta (hakemisto atak/config/prefs)</string>
   <string name="preferences_text273">Kun valittu, ATAKissa näytetään painike, jolla pimeänäkötilan voi kytkeä päälle ja pois</string>
   <string name="imagery_change_summ">Tässä versiossa GRG-välilehti on siirretty kokonaan karttatasojen hallintaan.\nTIF- tai KMZ-muotoiset GRG-tiedostot sijoitetaan kansioon atak/grg joko muistikortille tai sisäiseen muistiin.\n\nKuva-aineistoon perustuvat karttatuotteet (pfps, native, layers) sijoitetaan nyt kansioon atak/imagery joko muistikortille tai sisäiseen muistiin.\n\nKarttatasotuotteet, kuten KML, KMZ, LPT ja DRW, sijoitetaan kansioon atak/overlay joko muistikortille tai sisäiseen muistiin.</string>
   <string name="callsign_enter_dialogue">Anna uusi kutsutunnus</string>
@@ -3662,7 +3662,7 @@
   <string name="dar_encryptor_message">[%s asennettu]</string>
   <string name="outline_colon">Ääriviiva:</string>
   <string name="chat_message_no_recipients">Tässä ryhmässä ei ole tällä hetkellä verkossa olevia käyttäjiä.</string>
-  <string name="pref_save_title">Tiedostonimi ilman tunnistetta (hakemisto atak/config/prefs)</string>
+  <string name="pref_save_title">Tiedostonimi ilman tiedostotunnistetta (hakemisto atak/config/prefs)</string>
   <string name="pref_billboard_distance_title">Liitekuvien näyttöetäisyys</string>
   <string name="pref_billboard_distance_desc">Tätä lähempänä olevat liitekuvat näytetään navigoinnin aikana.</string>
   <string name="pref_billboard_category">Liitekuvat kartalla</string>

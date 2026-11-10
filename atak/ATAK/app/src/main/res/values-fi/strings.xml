@@ -1178,8 +1178,8 @@
   <string name="custom_color_dialog">"Valitse oma väri "</string>
   <string name="head">Alku</string>
   <string name="tail">Loppu</string>
-  <string name="rb_text1">"E "</string>
-  <string name="rb_text2">"S "</string>
+  <string name="rb_text1">"Et. "</string>
+  <string name="rb_text2">"Su. "</string>
   <string name="rb_text3">"° M"</string>
   <string name="rb_text4">Suhteellinen piste:</string>
   <string name="bearing_title">Suunta:</string>

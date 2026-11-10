@@ -81,6 +81,7 @@ Rows marked *open* are waiting for a decision by the project owner.
 | Altitude | Korkeus | SML I (field X: korkeus/syvyys) |
 | MSL / HAE / AGL | Merenpinnasta (MSL) / ellipsoidikorkeus (HAE) / korkeus maanpinnasta (AGL) | SML I (X), MTK; HAE and AGL: – |
 | Slant range | Vinoetäisyys | – |
+| Range / Bearing row labels (R&B info panel, recently added list: R, B) | Et. / Su. | Not single letters: the panel shows English compass letters (E, S) in the same column |
 | Inclination (vertical angle from the observer to the target) | Korkeuskulma | PV and survey usage. *Kaltevuus* is kept for terrain slope |
 | Bullseye direction: From Center / To Center | Keskeltä / Keskelle | *Keskuksesta / Keskukseen* does not fit the button |
 | Waypoint | Reittipiste | TO 10.4 |

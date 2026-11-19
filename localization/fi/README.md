@@ -8,10 +8,14 @@ Finnish translation of the ATAK-CIV user interface and MIL-STD-2525 symbol names
 |---|---|
 | `atak/ATAK/app/src/main/res/values-fi/strings.xml` | 5652 of 5819 translatable strings (ATAK-CIV 5.5.1.10) |
 | `atak/ATAK/app/src/main/res/values-fi/arrays.xml` | 13 string arrays whose items are literal text |
+| `atak/ATAK/app/src/main/res/drawable-fi/confirm_widget.xml`, `cancel_widget.xml` | Finnish CONFIRM and CANCEL buttons of the target bubble move mode (*VAHVISTA*, *PERUUTA*). The English labels are glyph paths inside these vector drawables, so no string covers them |
+| `atak/ATAK/app/src/main/res/drawable-fi-mdpi/send_square.png`, `drawable-fi-xxxhdpi/send_square.png` | Finnish Send icon in the point dropper's last-added-point row (*LÄHETÄ*, the same as `send_caps`). The English icon has SEND drawn in the image |
 | `localization/fi/GLOSSARY.md` | Terminology with sources |
 | `localization/fi/tools/l10n_fi.py` | Helper: `dump`, `build`, `check` |
 
 The values-fi files are the result. They can be edited directly. Run the check afterwards.
+
+The Finnish images were tested on an ATAK-CIV 5.8.0.9 build. The English drawables they replace are the same in 5.5.1.10. Android picks the Finnish variant by locale first and then the closest density, so high-density devices get the sharp xxxhdpi icon.
 
 ## Checking
 
